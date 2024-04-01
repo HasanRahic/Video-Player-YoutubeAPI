@@ -5,10 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-}
-body{
     background: rgb(41, 39, 39);
-}
+} 
 
 .main{
     display: flex;
@@ -20,13 +18,20 @@ body{
     align-items: center;
     position: static;
     width: 15%;
+    height: 100vh;
     gap: 20px;
+    border: 0.5px solid grey;
 }
-
+.home-navbar{
+    margin-top: 30px;
+}
 .home{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 83%;
+    margin-left: 2%;
+    height: 100vh;
+    border: 0.5px solid white;
 }
