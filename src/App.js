@@ -9,7 +9,14 @@ function App() {
           <div className="upload">Upload</div>
         </div>
         <div className="home">
-          <p>this that this that</p>
+          <div className="video"></div>
+          <div className="video"></div>
+          <div className="video"></div>
+          <div className="video"></div>
+          <div className="video"></div>
+          <div className="video"></div>
+          <div className="video"></div>
+          <div className="video"></div>
         </div>
       </div>
     </form>
