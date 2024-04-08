@@ -22,6 +22,99 @@ const PlayVideo = () => {
                 <span><img src={save} alt="" /> Save</span>
             </div>
         </div>
+      <hr />
+      <div className="publisher">
+        <img src={jack} alt="" />
+        <div>
+          <p>PewDiePie</p>
+          <span>100M Subscribers</span>
+        </div>
+        <button>Subscribe</button>
+      </div>
+      <div className="vid-description">
+        <p>Great learning channel makes it easy</p>
+        <p>Subscribe for more content</p>
+        <hr />
+        <h4>342 Comments</h4>
+        <div className="comment">
+          <img src={user_profile} alt="" />
+          <div>
+            <h3>Nikola Nikolshon <span>1 day ago</span></h3>
+            <p>awesome video again thx for this i have used Tailwind on a project before but yeah it felt overdoing it for what was required at the time, i still might try it again</p>
+            <div className="comment-action">
+              <img src={like} alt="" />
+              <span>13</span>
+              <img src={dislike} alt="" />
+              <span>1</span>
+            </div>
+          </div>
+        </div>
+        <div className="comment">
+          <img src={user_profile} alt="" />
+          <div>
+            <h3>Nikola Nikolshon <span>1 day ago</span></h3>
+            <p>awesome video again thx for this i have used Tailwind on a project before but yeah it felt overdoing it for what was required at the time, i still might try it again</p>
+            <div className="comment-action">
+              <img src={like} alt="" />
+              <span>13</span>
+              <img src={dislike} alt="" />
+              <span>1</span>
+            </div>
+          </div>
+        </div>
+        <div className="comment">
+          <img src={user_profile} alt="" />
+          <div>
+            <h3>Nikola Nikolshon <span>1 day ago</span></h3>
+            <p>awesome video again thx for this i have used Tailwind on a project before but yeah it felt overdoing it for what was required at the time, i still might try it again</p>
+            <div className="comment-action">
+              <img src={like} alt="" />
+              <span>13</span>
+              <img src={dislike} alt="" />
+              <span>1</span>
+            </div>
+          </div>
+        </div>
+        <div className="comment">
+          <img src={user_profile} alt="" />
+          <div>
+            <h3>Nikola Nikolshon <span>1 day ago</span></h3>
+            <p>awesome video again thx for this i have used Tailwind on a project before but yeah it felt overdoing it for what was required at the time, i still might try it again</p>
+            <div className="comment-action">
+              <img src={like} alt="" />
+              <span>13</span>
+              <img src={dislike} alt="" />
+              <span>1</span>
+            </div>
+          </div>
+        </div>
+        <div className="comment">
+          <img src={user_profile} alt="" />
+          <div>
+            <h3>Nikola Nikolshon <span>1 day ago</span></h3>
+            <p>awesome video again thx for this i have used Tailwind on a project before but yeah it felt overdoing it for what was required at the time, i still might try it again</p>
+            <div className="comment-action">
+              <img src={like} alt="" />
+              <span>13</span>
+              <img src={dislike} alt="" />
+              <span>1</span>
+            </div>
+          </div>
+        </div>
+        <div className="comment">
+          <img src={user_profile} alt="" />
+          <div>
+            <h3>Nikola Nikolshon <span>1 day ago</span></h3>
+            <p>awesome video again thx for this i have used Tailwind on a project before but yeah it felt overdoing it for what was required at the time, i still might try it again</p>
+            <div className="comment-action">
+              <img src={like} alt="" />
+              <span>13</span>
+              <img src={dislike} alt="" />
+              <span>1</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
