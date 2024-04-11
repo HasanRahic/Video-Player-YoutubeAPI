@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Feed.css'
-import thumbnail1 from '../../Assets/thumbnail1.png'
-import thumbnail2 from '../../Assets/thumbnail2.png'
-import thumbnail3 from '../../Assets/thumbnail3.png'
-import thumbnail4 from '../../Assets/thumbnail4.png'
-import thumbnail5 from '../../Assets/thumbnail5.png'
-import thumbnail6 from '../../Assets/thumbnail6.png'
-import thumbnail7 from '../../Assets/thumbnail7.png'
-import thumbnail8 from '../../Assets/thumbnail8.png'
 import { Link } from 'react-router-dom'
 import { API_KEY } from '../../data'
 import {value_converter} from '../../data'
+import moment from 'moment'
 
 
 const Feed = ({category}) => {
@@ -34,9 +27,8 @@ const Feed = ({category}) => {
                     <img src={item.snippet.thumbnails.medium.url} alt="" />
                     <h2>{item.snippet.title}</h2>
                     <h3>{item.snippet.channelTitle}</h3>
-                    <p>{value_converter(item.statistics.viewCount)} views &bull; 2 days ago</p>
+                    <p>{value_converter(item.statistics.viewCount)} views &bull; {moment(item.snippet.publishedAt).fromNow()}</p>
                 </Link>
-
             )
         })}
     </div>
