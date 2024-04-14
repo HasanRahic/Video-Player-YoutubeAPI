@@ -3,7 +3,7 @@
 }
 .play-video iframe{
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 37vw;
 }
 .play-video h3{
