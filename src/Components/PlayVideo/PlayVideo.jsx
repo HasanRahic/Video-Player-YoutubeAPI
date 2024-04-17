@@ -7,8 +7,11 @@ import save from '../../Assets/save.png'
 import user_profile from '../../Assets/user_profile.jpg'
 import { API_KEY, value_converter } from '../../data'
 import moment from 'moment'
+import { useParams } from 'react-router-dom'
 
-const PlayVideo = ({videoId}) => {
+const PlayVideo = () => {
+
+  const {videoId} = useParams();
 
   const [apiData, setApiData] = useState(null);
   const [channelData, setChannelData] = useState(null);
@@ -46,7 +49,7 @@ const PlayVideo = ({videoId}) => {
   
   useEffect(() => {
     fetchDataVideo();
-  }, []);
+  }, [videoId]);
   
   useEffect(() => {
     fetchOtherData();
