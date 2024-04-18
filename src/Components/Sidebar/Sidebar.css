@@ -75,3 +75,8 @@
 .sideBar.small-sidebar .shortcut-links .side-links.active img{
     margin-left: 25%;
 }
+@media (max-width:900px){
+    .sideBar{
+        display: none;
+    }
+}
