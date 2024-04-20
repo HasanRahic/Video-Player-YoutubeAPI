@@ -24,3 +24,10 @@
     color:#555;
     margin: 6px 0;
 }
+
+@media (max-width:900px){
+    .recommended{
+        flex-basis: 100%;
+    }
+    
+}
