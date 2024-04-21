@@ -9,13 +9,18 @@ import { API_KEY, value_converter } from '../../data'
 import moment from 'moment'
 import { useParams } from 'react-router-dom'
 
-const PlayVideo = () => {
+const PlayVideo = ({setSubscribe}) => {
 
   const {videoId} = useParams();
 
   const [apiData, setApiData] = useState(null);
   const [channelData, setChannelData] = useState(null);
   const [commentData, setCommentData] = useState([]);
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive); // Toggles the isActive state
+  };
   
   const fetchDataVideo = async () => {
     try {
@@ -75,7 +80,7 @@ const PlayVideo = () => {
           <p>{apiData?apiData.snippet.channelTitle:"Chennel title"}</p>
           <span>{channelData ? value_converter(channelData.statistics.subscriberCount) : "1M"} Subscribers</span>
         </div>
-        <button>Subscribe</button>
+        <button className={isActive ? 'activeSub' : ''} onClick={handleClick}>Subscribe</button>
       </div>
       <div className="vid-description">
         <p>{apiData ? apiData.snippet.description.slice(0,250) : "Description here"}</p>
