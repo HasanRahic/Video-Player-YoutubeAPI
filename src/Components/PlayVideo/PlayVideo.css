@@ -29,9 +29,6 @@
     align-items: center;
     margin-left: 15px;
 }
-.play-video-info .activeLike{
-    color: blue;
-}
 .play-video hr{
     border: 0;
     height: 1px;
@@ -72,8 +69,9 @@
     cursor: pointer;
 }
 .publisher .activeSub{
-    background: #cfcfcf;
+    background: #F2F2F2;
     color: red;
+    border: 1px solid grey;
 }
 .vid-description{
     padding-left: 55px;
