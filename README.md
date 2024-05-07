@@ -22,24 +22,6 @@
   4. Access the application through your web browser.
 
 
-### Example 
-  ```ruby
-    import React from 'react';
-    import YouTubePlayer from './YouTubePlayer';
-
-    const App = () => {
-    return (
-      <div>
-        <h1>ReactJS YouTube Video Player</h1>
-        <YouTubePlayer videoId="VIDEO_ID_HERE" />
-      </div>
-      );
-    };
-
-    export default App;
-
-  ```
-Replace `"VIDEO_ID_HERE"` with the ID of the YouTube video you want to play.
 
 
 ## Contributing
